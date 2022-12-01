@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Array test</title>
+    </head>
+    <body>
+        <div class="wrapper" id="wrapper">
+            <div id="questions">
+                <h2 class="title" id="title"></h2>
+                <p class="text" id="question"></p>
+                <ul class="list">
+                    <li>
+                        <input
+                            class="input"
+                            type="radio"
+                            value="0"
+                            name="year"
+                            id="y1"
+                        /><span class="span" id="span1"></span>
+                    </li>
+                    <li>
+                        <input
+                            class="input"
+                            type="radio"
+                            value="1"
+                            name="year"
+                            id="y2"
+                        /><span class="span" id="span2"></span>
+                    </li>
+                    <li>
+                        <input
+                            class="input"
+                            type="radio"
+                            value="2"
+                            name="year"
+                            id="y3"
+                        /><span class="span" id="span3"></span>
+                    </li>
+                    <li>
+                        <input
+                            class="input"
+                            type="radio"
+                            value="3"
+                            name="year"
+                            id="y4"
+                        /><span class="span" id="span4"></span>
+                    </li>
+                </ul>
+                <button class="btn__answer" id="get_answer">Дать ответ</button>
+                <div class="right_div hidden" id="right_div">
+                    <div class="right" id="right">Правильный ответ</div>
+                    <button class="btn__answer_1" id="next_question">
+                        Следующий вопрос
+                    </button>
+                </div>
+                <div class="wrong_div hidden" id="wrong_div">
+                    <div class="question__number" class="wrong" id="wrong">
+                        Неправильный ответ
+                    </div>
+                    <button class="btn__answer_1" id="view_answer">
+                        Посмотреть ответ
+                    </button>
+                </div>
+                <div id="answer" class="hidden"></div>
+            </div>
+            <div id="total_div">
+                <div class="question__number">
+                    Номер вопроса: <span id="question_number"></span>
+                </div>
+                <div class="count">
+                    Количество правильных ответов:
+                    <span id="number_right_questions"></span> (с первого раза).
+                </div>
+            </div>
+        </div>
+        <input type="hidden" value="0" id="n_question" />
+        <script src="js/script.js"></script>
+    </body>
+</html>
