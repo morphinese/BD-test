@@ -5,14 +5,13 @@
 html,
 body {
     transition: all 0.3s ease 0s;
-    background: url('../img/bg.jfif') center ;
     height: 100%;
     overflow: hidden;
     width: 100%;
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
-    color: #fff;
+    color: #222;
 }
 ul li {
     list-style: none;
